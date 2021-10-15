@@ -30,7 +30,7 @@ for (let i = 3; i < 6; i++) {
 //   - Which part of the example loop do you need to change to do this?
 //instead of incrementing i, we add 2
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-for (let i = 0; i < 11; i += 2) {
+for (let i = 2; i < 11; i += 2) {
   console.log(i);
 }
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
@@ -44,7 +44,7 @@ console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-for (name of stars){
+for (let name of stars){
   console.log('Some stars:', name);
 }
 
@@ -53,14 +53,15 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-while (stars.length < 6) {
-  console.log(stars);
-  stars++;
-  }
+let i = 0;
+while (i < stars.length ){
+  console.log(stars[i]);
+  i++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-let i = 0;
+i = 0;
 while (i < 6) {
   console.log(i);
   i++;
